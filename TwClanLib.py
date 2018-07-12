@@ -5,6 +5,7 @@ import sys
 import clans.unique_members
 import clans.kog_members
 import clans.aeon_xron_members
+import clans.kappa_members
 
 TotalClans = 0
 
@@ -14,6 +15,8 @@ clan_aeon, clan_xron = clans.aeon_xron_members.GetMembers()
 TotalClans += 2
 clan_kog = clans.kog_members.GetMembers()
 TotalClans += 1
+clan_kappa, clan_hmm, clan_ib = clans.kappa_members.GetMembers()
+TotalClans += 3
 
 aaClans = [[0 for x in range(2)] for x in range(TotalClans)]
 aaClans[0][0] = "unique"
@@ -24,6 +27,13 @@ aaClans[2][0] = "xron"
 aaClans[2][1] = clan_xron
 aaClans[3][0] = "kog"
 aaClans[3][1] = clan_kog
+aaClans[4][0] = "kappa"
+aaClans[4][1] = clan_kappa
+aaClans[5][0] = "hmm"
+aaClans[5][1] = clan_hmm
+aaClans[6][0] = "-.iB"
+aaClans[6][1] = clan_ib
+
 
 
 def cls():
